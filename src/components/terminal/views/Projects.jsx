@@ -26,6 +26,22 @@ export default function Projects() {
       `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-17.jpg`,
       `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-18.jpg`,
       `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-20.jpg`
+    ],
+    "SkateMesh": [
+      `${base}images/SkateMesh/SkateMesh Report-image-21.png`,
+      `${base}images/SkateMesh/SkateMesh Report-image-11.png`,
+      `${base}images/SkateMesh/SkateMesh Report-image-17.png`,
+      `${base}images/SkateMesh/SkateMesh Report-image-18.png`,
+      `${base}images/SkateMesh/SkateMesh Report-image-22.png`,
+      `${base}images/SkateMesh/SkateMesh Report-image-25.png`
+    ],
+    "CPHFW": [
+      `${base}images/CPHFW/Copy of CPHFW REPORT-image-22.png`,
+      `${base}images/CPHFW/Copy of CPHFW REPORT-image-18.png`,
+      `${base}images/CPHFW/Copy of CPHFW REPORT-image-2.png`,
+      `${base}images/CPHFW/Copy of CPHFW REPORT-image-21.png`,
+      `${base}images/CPHFW/Copy of CPHFW REPORT-image-36.png`,
+      `${base}images/CPHFW/Copy of CPHFW REPORT-image-72.png`
     ]
   }
 
@@ -82,6 +98,40 @@ export default function Projects() {
       images: galleryByFolder["PCB Design & Electronics Project"],
       reportUrl: `${base}reports/PCB-Journal.pdf`,
       reportName: "PCB-Journal.pdf"
+    },
+    {
+      title: "SkateMesh",
+      date: "Autumn 2025 (Exam project, 18/12/2025)",
+      description: "A Multimedia Design exam project that delivered a full UX-to-development skateboarding platform for younger skaters. I started with desk and field research, then used affinity mapping, persona work, and value-proposition analysis to define needs and priorities. After lo-fi and hi-fi prototyping with usability tests, I refined visual hierarchy and interaction flow, then built modular features in JavaScript—attendance state, synchronized carousel/map behavior, photo upload, and scheduling—into a responsive interface.",
+      technologies: "HTML, CSS, JavaScript, Figma, Git, GitHub Pages",
+      responsibilities: [
+        "Researched skate communities through desk and field methods, interviews, and data synthesis.",
+        "Defined user needs using persona, value proposition canvas, OOUX objects, and prioritised requirements.",
+        "Designed and iterated wireframes/hi-fi screens in Figma, including moodboards, style tile, and usability testing with 5 users.",
+        "Implemented key modules in JavaScript: attendance cards, adaptive carousel, map-location sync, session scheduling flow, photo upload modal, and responsive behavior.",
+        "Optimised interactions for mobile and desktop, including a locked-scroll burger menu and map zoom/drag handling for usability."
+      ],
+      imageUrl: `${base}images/SkateMesh/SkateMesh Report-image-25.png`,
+      images: galleryByFolder["SkateMesh"],
+      reportUrl: `${base}reports/SkateMesh Report.pdf`,
+      reportName: "SkateMesh Report.pdf"
+    },
+    {
+      title: "CPHFW",
+      date: "Prototyping, Autumn 2025 (14/11/2025)",
+      description: "A team prototyping project for a digital CPHFW experience focused on better event discovery and networking. We combined desk and field research with interviews and surveys, then synthesized insights into personas, requirements, and OOUX structures before moving from lo-fi sketches to hi-fi prototypes. Usability sessions with users guided simplifications in copy, layout, and flow. The final implementation used modular JavaScript for event scheduling/cards, interactive map pins with contextual popups, and responsive mobile/desktop paths to support real use in both browsing and on-site contexts.",
+      technologies: "HTML, CSS, JavaScript, Figma, Git, GitHub Pages",
+      responsibilities: [
+        "Conducted desk and field research with interviews and surveys to identify accessibility, networking, and event-discovery pain points.",
+        "Built the product concept with persona, value proposition canvas, OOUX, requirements mapping, and value-driven visual system.",
+        "Converted lo-fi explorations to hi-fi prototypes with usability sessions and UX writing refinements.",
+        "Implemented event data handling, pop-up driven event cards, discovery interactions, and interactive map pin system with dynamic popups and highlighting.",
+        "Delivered responsive info-screen and mobile layouts with integrated burger navigation, screensaver/404 screens, and shared data-driven component logic."
+      ],
+      imageUrl: `${base}images/CPHFW/Copy of CPHFW REPORT-image-21.png`,
+      images: galleryByFolder["CPHFW"],
+      reportUrl: `${base}reports/CPHFW REPORT.pdf`,
+      reportName: "CPHFW REPORT.pdf"
     },
     {
       title: "Third Semester Final Project",
