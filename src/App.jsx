@@ -1,11 +1,11 @@
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import Terminal from './components/terminal/Terminal'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Terminal />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
