@@ -1,29 +1,31 @@
 import ProjectCard from '../components/ProjectCard'
 
 export default function Projects() {
+  const base = import.meta.env.BASE_URL
+
   const galleryByFolder = {
     "Technical Report IT Technology - 4th Semester": [
-      "/images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-16.png",
-      "/images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-17.png",
-      "/images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-18.png",
-      "/images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-19.png",
-      "/images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-6.png",
-      "/images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-7.png"
+      `${base}images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-16.png`,
+      `${base}images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-17.png`,
+      `${base}images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-18.png`,
+      `${base}images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-19.png`,
+      `${base}images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-6.png`,
+      `${base}images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-7.png`
     ],
     "PCB Design & Electronics Project": [
-      "/images/ATmega 1284 PCB/PCB Journal-image-1.jpg",
-      "/images/ATmega 1284 PCB/PCB Journal-image-2.jpg",
-      "/images/ATmega 1284 PCB/PCB Journal-image-3.png",
-      "/images/ATmega 1284 PCB/PCB Journal-image-4.png",
-      "/images/ATmega 1284 PCB/PCB Journal-image-6.png"
+      `${base}images/ATmega 1284 PCB/PCB Journal-image-1.jpg`,
+      `${base}images/ATmega 1284 PCB/PCB Journal-image-2.jpg`,
+      `${base}images/ATmega 1284 PCB/PCB Journal-image-3.png`,
+      `${base}images/ATmega 1284 PCB/PCB Journal-image-4.png`,
+      `${base}images/ATmega 1284 PCB/PCB Journal-image-6.png`
     ],
     "Third Semester Final Project": [
-      "/images/AIDS - 3rd SEM/Third semester - Final project Report-image-14.jpg",
-      "/images/AIDS - 3rd SEM/Third semester - Final project Report-image-15.jpg",
-      "/images/AIDS - 3rd SEM/Third semester - Final project Report-image-16.jpg",
-      "/images/AIDS - 3rd SEM/Third semester - Final project Report-image-17.jpg",
-      "/images/AIDS - 3rd SEM/Third semester - Final project Report-image-18.jpg",
-      "/images/AIDS - 3rd SEM/Third semester - Final project Report-image-20.jpg"
+      `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-14.jpg`,
+      `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-15.jpg`,
+      `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-16.jpg`,
+      `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-17.jpg`,
+      `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-18.jpg`,
+      `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-20.jpg`
     ]
   }
 
@@ -58,9 +60,9 @@ export default function Projects() {
         "Create technical documentation and reports",
         "Analyze system performance and optimization"
       ],
-      imageUrl: "/images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-16.png",
+      imageUrl: `${base}images/Thermal Googles- 4th SEM/Technical Report IT Technology - 4th SEM-image-16.png`,
       images: galleryByFolder["Technical Report IT Technology - 4th Semester"],
-      reportUrl: "/reports/Technical-Report-IT-Technology-4th-SEM.pdf",
+      reportUrl: `${base}reports/Technical-Report-IT-Technology-4th-SEM.pdf`,
       reportName: "Technical-Report-IT-Technology-4th-SEM.pdf"
     },
     {
@@ -76,9 +78,9 @@ export default function Projects() {
         "Documentation of design specifications",
         "Troubleshooting and optimization of hardware"
       ],
-      imageUrl: "/images/ATmega 1284 PCB/PCB Journal-image-1.jpg",
+      imageUrl: `${base}images/ATmega 1284 PCB/PCB Journal-image-1.jpg`,
       images: galleryByFolder["PCB Design & Electronics Project"],
-      reportUrl: "/reports/PCB-Journal.pdf",
+      reportUrl: `${base}reports/PCB-Journal.pdf`,
       reportName: "PCB-Journal.pdf"
     },
     {
@@ -94,9 +96,9 @@ export default function Projects() {
         "Present findings and technical documentation",
         "Collaborate with team members on development"
       ],
-      imageUrl: "/images/AIDS - 3rd SEM/Third semester - Final project Report-image-14.jpg",
+      imageUrl: `${base}images/AIDS - 3rd SEM/Third semester - Final project Report-image-14.jpg`,
       images: galleryByFolder["Third Semester Final Project"],
-      reportUrl: "/reports/Third-Semester-Final-Project-Report.pdf",
+      reportUrl: `${base}reports/Third-Semester-Final-Project-Report.pdf`,
       reportName: "Third-Semester-Final-Project-Report.pdf"
     },
     {
@@ -122,7 +124,7 @@ export default function Projects() {
   return (
     <div className="pl-4 pt-4 pb-4">
       <div style={{color: '#7fb342', fontSize: '1.2rem', marginBottom: '1.5rem'}}>
-        ▸ PROJECTS
+        â–¸ PROJECTS
       </div>
       <div>
         {projects.map((project, idx) => (
