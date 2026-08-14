@@ -1,5 +1,6 @@
 // Example of how to add more projects to the Projects view
 // Copy this template and add it to the projects array in Projects.jsx
+const base = import.meta.env.BASE_URL
 
 export const projectTemplate = {
   title: "Project Name",
@@ -27,5 +28,5 @@ export const exampleProject = {
     "Set up database schema and optimization",
     "Deployed to production with Docker"
   ],
-  imageUrl: "/images/ecommerce-project.jpg"
+  imageUrl: `${base}images/ecommerce-project.jpg`
 }
