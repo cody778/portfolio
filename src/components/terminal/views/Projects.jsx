@@ -33,7 +33,7 @@ export default function Projects() {
     {
       title: "VR Gym",
       date: "27/12/2021 - 08/05/2024",
-      description: "A VR company that replicates the Sports Gym medium in VR by having zumba, yoga and other fitness focused classes.",
+      description: "A VR company replicates the sports gym experience in virtual reality by running live and on-demand fitness classes in shared immersive sessions, with a responsive website where members can discover classes, book training sessions, manage memberships, and track their activity. The project included secure account management with role-based member/trainer experiences, subscription and payment lifecycle logic, and integrated automated email communication. The platform also stays synchronized with the VR platform so class availability and occupancy data are always current.",
       technologies: "React, JavaScript, HTML5, CSS, Klaviyo, Payment Integration, REST APIs",
       responsibilities: [
         "Build and design their website with responsive UI",
@@ -51,7 +51,7 @@ export default function Projects() {
     {
       title: "Technical Report IT Technology - 4th Semester",
       date: "01/09/2023 - 31/12/2023",
-      description: "Comprehensive technical research and implementation project covering advanced IT technologies, embedded systems integration, and system design patterns.",
+      description: "This technical report project explored advanced IT technologies through the design and implementation of an embedded systems solution with a strong focus on IoT sensor integration, thermal measurement workflows, and system architecture. It involved connecting microcontrollers and networking components into a robust data pipeline, logging and validating sensor data, and tuning acquisition parameters for stable real-world performance. The outcome was a full report that includes architecture documentation, testing methodology, and concrete recommendations for future optimisation.",
       technologies: "Embedded Systems, C/C++, Arduino, IoT, Networking, Linux",
       responsibilities: [
         "Research and document IT technology advancements",
@@ -68,7 +68,7 @@ export default function Projects() {
     {
       title: "PCB Design & Electronics Project",
       date: "01/06/2023 - 31/08/2023",
-      description: "PCB (Printed Circuit Board) design and fabrication project focusing on electronics prototyping, circuit design, and hardware assembly.",
+      description: "This project covered complete PCB design and prototyping, starting from schematic definition through layout review and hardware assembly. It focused on improving signal quality and practical build quality through iterative revisions, while balancing part selection, manufacturability, and thermal considerations. Each revision was tested and debugged, then documented with pin maps and test setups to maintain consistency and create a reliable reference for future development.",
       technologies: "PCB Design Tools, KiCAD, Electronics, Microcontrollers, Soldering, Circuitry",
       responsibilities: [
         "Design PCB layouts and schematics",
@@ -86,7 +86,7 @@ export default function Projects() {
     {
       title: "Third Semester Final Project",
       date: "01/09/2022 - 31/12/2022",
-      description: "Capstone project for third semester integrating multiple technologies and showcasing problem-solving skills in a real-world application.",
+      description: "This was a capstone project spanning planning, architecture, implementation, and delivery of a practical software solution that combined backend, frontend, and data design work. The work was coordinated across milestones with regular progress checks, testing cycles, and troubleshooting to ensure reliability before final validation. Alongside implementation, the project included technical documentation that communicates design decisions and supports long-term maintainability.",
       technologies: "Full-Stack Development, Programming, Database Design, Project Management",
       responsibilities: [
         "Conceptualize and design project architecture",
@@ -104,7 +104,7 @@ export default function Projects() {
     {
       title: "Mini Pupper ROS Robotics - Hackathon 2022",
       date: "15/09/2022 - 20/09/2022",
-      description: "Intensive one-week hackathon project building and programming the Mini Pupper ROS robotic kit, testing robotics engineering and programming skills under pressure.",
+      description: "This one-week hackathon project involved assembling and programming the Mini Pupper ROS robotics kit to execute movement and sensor-driven behavior under tight time constraints. The team configured ROS communication topics, debugged command feedback flows, and tuned movement logic for repeatable behavior across test runs. The final result was a working demonstration delivered on deadline, with iterative problem-solving and rapid refinements throughout the event.",
       technologies: "ROS (Robot Operating System), Python, C++, Robot Control Systems, Linux",
       responsibilities: [
         "Reverse engineer the Mini Pupper ROS kit",
@@ -124,11 +124,11 @@ export default function Projects() {
   return (
     <div className="pl-4 pt-4 pb-4">
       <div style={{color: '#7fb342', fontSize: '1.2rem', marginBottom: '1.5rem'}}>
-        â–¸ PROJECTS
+        &gt;&gt; PROJECTS
       </div>
       <div>
         {projects.map((project, idx) => (
-          <ProjectCard
+        <ProjectCard
             key={idx}
             title={project.title}
             date={project.date}

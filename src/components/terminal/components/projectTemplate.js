@@ -5,7 +5,7 @@ const base = import.meta.env.BASE_URL
 export const projectTemplate = {
   title: "Project Name",
   date: "Start Date - End Date",
-  description: "Brief description of the project and what it does",
+  description: "Brief description of the project and what it does, including the technical scope, implementation approach, and key outcomes in one paragraph.",
   technologies: "Tech Stack: React, Node.js, MongoDB, etc.",
   responsibilities: [
     "Responsibility 1",
@@ -19,7 +19,7 @@ export const projectTemplate = {
 export const exampleProject = {
   title: "E-Commerce Platform",
   date: "01/06/2023 - 31/12/2023",
-  description: "A full-stack e-commerce platform for online retail with payment integration and inventory management.",
+  description: "A full-stack e-commerce platform for online retail that handled product browsing, checkout, and order management with integrated payment support and inventory synchronization. It used React-based interfaces connected to API services for fast catalog filtering, cart persistence, and order workflows, while remaining optimized for performance through smarter request handling. Production readiness included deployment and monitoring to maintain stable releases during growth in traffic and usage.",
   technologies: "React, Node.js, Express, MongoDB, Stripe",
   responsibilities: [
     "Designed and built responsive frontend interface",
