@@ -32,15 +32,18 @@ export default function Terminal() {
     if (trimmed === 'help') {
       setCommandHistory(prev => [...prev, { 
         type: 'output', 
-        value: 'Available commands:\n  about    - Learn more about me\n  projects - View my projects\n  contact  - Get in touch\n  help     - Show this help message' 
+        value: 'Available commands:\n  about    - Learn more about me\n  projects - View my projects\n  contact  - Get in touch\n  home/ root     - Go to main view\n  help     - Show this help message' 
       }])
     } else if (trimmed === 'about') {
+      setCommandHistory([])
       navigate('/about')
     } else if (trimmed === 'projects') {
+      setCommandHistory([])
       navigate('/projects')
     } else if (trimmed === 'contact') {
+      setCommandHistory([])
       navigate('/contact')
-    } else if (trimmed === 'home' || trimmed === 'welcome' || trimmed === 'clear') {
+    } else if (trimmed === 'home' || trimmed === 'root' || trimmed === 'welcome' || trimmed === 'clear') {
       setCommandHistory([])
       navigate('/')
     } else if (trimmed !== '') {
